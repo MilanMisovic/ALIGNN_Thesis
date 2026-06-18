@@ -216,3 +216,42 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Project-specific additions (ALIGNN MOF thesis)
+
+# Data files -- too large for git, regenerate locally instead
+*.pt
+*.zip
+*.npy
+data_tmp_*/
+output_*/
+runs/
+
+# LMDB cache files
+sampletrain_data*
+sampleval_data*
+sampletest_data*
+*_train_data*
+*_val_data*
+*_test_data*
+lock.mdb
+data.mdb
+
+# Model checkpoints and results (regenerate via training scripts)
+best_model.pt
+current_model.pt
+last_model.pt
+checkpoint_*.pt
+
+# Logs
+*.out
+*.err
+job.out
+job.err
+gpu-stats-*.out
+
+# Temp files from pyzeo
+*.cssr
+*.rad
+*.xyz
